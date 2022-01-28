@@ -1,22 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Css Selectors</title>
     <style>
-p{
-    color: red;
-}
+      /* element selector */
+      p {
+        color: red;
+      }
+
+      /* Class Selector */
+      .tomato {
+        color: tomato;
+      }
+
+      /* Id Selector */
+      #bluy {
+        color: blue;
+      }
+
+      /* Grouping Selector */
+      footer,
+      span {
+        color: #0051ff;
+        background-color: rgb(1, 66, 92);
+      }
     </style>
-</head>
-<body>
+  </head>
+
+  <body>
     <h1>Css Selectors</h1>
-    <p>This is a simple paragraph to demonstrate Css Selectors</p>
-    <p>This is a another simple paragraph to demonstrate Css Selectors</p>
+    <p id="bluy">This is a simple paragraph to demonstrate Css Selectors</p>
+    <p class="tomato">
+      This is a another simple paragraph to demonstrate Css Selectors
+    </p>
     <div>
-        <p>This is a yetanother simple paragraph inside div to demonstrate Css Selectors</p>
+      <p>
+        This is a yet another simple paragraph inside div to demonstrate Css
+        Selectors
+      </p>
+      <span>This is a Span</span>
     </div>
-</body>
+    <footer>This is Footer</footer>
+  </body>
 </html>
