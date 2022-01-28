@@ -1,5 +1,5 @@
 body{
-    background: radial-gradient(circle, #333333 0%, #000000 100%);
+    background: radial-gradient(circle, #d67676 0%, #000000 100%);
 }
 h1,
 h2,
@@ -7,8 +7,8 @@ h3,
 h4,
 h5,
 h6 {
-    display: flex;
     background-image: radial-gradient(circle, #00e9ff 14%, #4787ff 45%, #146fff 58%, #0d00ff 100%);
+    display: flex;
     margin: 1rem;
     padding: 10px;
     border-radius: 1em;
@@ -16,15 +16,17 @@ h6 {
     align-items: center;
     justify-content: center;
     text-align: center;
-    
+    font-weight: bolder;
 }
 p {
-    background-image:  radial-gradient(circle, #e21f33 0%, #6e0450 100%);
-    margin: 1rem;
+    background-image:  radial-gradient(circle, #e21fff 0%, #e21f33 100%);
+    margin: 1cm;
     padding: 10px;
     border-radius: 1em;
     font-family: sans-serif;
     align-items: center;
     justify-content: center;
     text-align: center;
+    font-size: small;
+    font-weight: bolder;
 }
