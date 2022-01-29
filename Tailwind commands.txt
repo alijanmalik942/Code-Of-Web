@@ -1,0 +1,10 @@
+We add this script in <head> -=><script src="https://cdn.tailwindcss.com"></script><=-
+npm init -y
+npm install -D tailwindcss postcss autoprefixer vite
+npx tailwindcss init -p
+"start": "vite"
+"build": "vite build"
+npm run start
+npm run build:tailwind
+// for customizing config file
+npx tailwindcss init NAME --full
