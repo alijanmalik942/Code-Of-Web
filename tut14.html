@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation</title>
+    <style>
+        .navbar {
+            background-color: #ffbea6;
+            border-radius: 9px 9px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-weight: bold;
+            justify-items: center;
+        }
+        .navbar ul {
+            overflow: auto;
+            
+        }
+        
+        .navbar li {
+            float: left;
+            margin: 11px;
+            list-style: none;
+            display: flex;
+            padding-top: 4px;
+        }
+        
+        .navbar li a {
+            padding: 3px 3px;
+            color: #ffffff;
+            text-decoration: none;
+            justify-content: center;
+            transition: all 0.2s;
+        }
+        .navbar li a:hover{
+            font-size: large;
+            color: coral;
+        }
+        .navbar .search {
+            float: right;
+            padding: 11px 30px;
+            border-radius: 20px;
+            align-content: flex-end;   
+        }
+        .navbar .search input{
+            border-radius: 5px;
+            border: 0;
+            padding:10px 24px;
+            text-align: center;
+            transition: all 1s;
+        }
+        .navbar .search input:hover{
+            background-color: #d67676;
+            color: #ffffff;
+            font-style: oblique;
+            font-weight: 800;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Join</a></li>
+                <li><a href="#">Contact</a></li>
+                <div class="search">
+                    <label for="Search"></label>
+                    <input type="text" name="Search" id="Search" placeholder="Search Anything">
+                </div>
+            </ul>
+        </nav>
+    </header>
+</body>
+
+</html>
