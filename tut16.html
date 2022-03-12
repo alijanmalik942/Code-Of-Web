@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Tutorial</title>
+    <style type="text/css">
+      /* position = static [Default], absolute, reative, sticky, absolute */
+      .container {
+        background: #00ffaa;
+        border-radius: 10px;
+        border: solid #000;
+        font-family: monospace;
+        font-size: xx-large;
+        margin: 4px;
+        height: 3000px;
+      }
+      .box {
+        background: url(https://source.unsplash.com/200x200);
+        display: inline-block;
+        border-radius: 10px;
+        border: solid rgb(15, 43, 204);
+        text-align: center;
+        font-family: monospace;
+        font-size: xx-large;
+        margin: 4px;
+        height: 200px;
+        width: 200px;
+      }
+      #box3 {
+        /* relative ka matlab hum is me top bottom left right use kar sakte hn and it will leave a gap at its normal position
+        position: relative;
+            left: 2rem;
+            top: 1rem; */
+        position: sticky;
+        top: 2px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="box" id="box1">1</div>
+      <div class="box" id="box2">2</div>
+      <div class="box" id="box3">3</div>
+      <!-- <div class="box" id="box4">4</div> -->
+    </div>
+  </body>
+</html>
