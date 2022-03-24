@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Visibility & z-index</title>
+    <style>
+      .box {
+        height: 8em;
+        width: 8em;
+        border: 2px solid darksalmon;
+        border-radius: 13px;
+      }
+      #box1 {
+        /* visibility: visible; */
+        background: url(https://source.unsplash.com/200x200);
+        position: relative;
+        top: 60px;
+        z-index: 2;
+      }
+      #box2 {
+        /* visibility: hidden; */
+        z-index: 1;
+        top: 15px;
+        position: relative;
+        background: url(https://source.unsplash.com/200x200);
+      }
+      #box3 {
+        /* z index will only work for position: relative, absolute, sticky, fixed; */
+        /* visibility: hidden; 
+        will hide the element but show its empty space */
+        /* display: none;
+        will hide the element and its space */
+        z-index: 3;
+        position: relative;
+        background: url(https://source.unsplash.com/200x200);
+      }
+      #box4 {
+        background: url(https://source.unsplash.com/200x200);
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="box" id="box1"></div>
+    <div class="box" id="box2"></div>
+    <div class="box" id="box3"></div>
+    <div class="box" id="box4"></div>
+  </body>
+</html>
