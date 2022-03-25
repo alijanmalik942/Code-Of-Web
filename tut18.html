@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Flexbox</title>
+    <style>
+      .container {
+        height: 400px;
+        width: 99%;
+        /* background: url(https://source.unsplash.com/1600x400) no-repeat; */
+        border: 4px solid deepskyblue;
+        border-radius: 1em;
+        margin: auto;
+        text-align: center;
+        /* display flex initialixe a container as a flexbox */
+        display: flex;
+
+        /* flex properties for flex container */
+
+        /* the default value of flex-direction is row  */
+        flex-direction: row;
+        /* flex-direction: column; */
+        /* flex-direction: row-reverse; */
+        /* flex-direction: column-reverse; */
+
+        /*the default value of flex-wrap is nowrap*/
+        /* flex-wrap: nowrap; */
+        /* flex-wrap: wrap; */
+        /* flex-wrap: wrap-reverse; */
+
+        /* we can set both flex-direction and flex-wrap by using flex-flow property */
+        /* flex-flow: row-reverse wrap; */
+
+        /* justify-content:center ; */
+        /* justify-content:space-around ; */
+        /* justify-content:space-between ; */
+        justify-content: space-evenly;
+        align-items: center;
+      }
+      .item {
+        background-color: #14ffe0;
+        border: 4px solid deepskyblue;
+        /* text-align: center; */
+        border-radius: 1em;
+        margin: 1rem;
+        padding: 11px;
+        width: 200px;
+        height: 200px;
+      }
+      /* flex properties for flex item */
+      #item1 {
+        /* flex-grow: 3; */
+        order: 2;
+        align-self: flex-start;
+        /* when flex direction is set to row than flex basis will change the width  */
+        /* when flex direction is set to column than flex basis will change the height  */
+      }
+      #item2 {
+          align-self: flex-end;
+        flex-basis: 20em;
+        /* flex-grow: 5;
+        flex-shrink: 5; */
+        order: 3;
+      }
+      #item3 {
+        order: 1;
+        align-self: flex-end;
+        /* flex: flex-grow, flex-shrink, flex-basis; */
+        flex: 6 6 50em;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 style="text-align: center">This is Css Flexbox</h1>
+    <div class="container">
+      <!-- .item#item-$*6 -->
+      <div class="item" id="item1">First Box</div>
+      <div class="item" id="item2">Second Box</div>
+      <div class="item" id="item3">Third Box</div>
+      <!-- <div class="item" id="item4">FourthBox</div>
+      <div class="item" id="item5">FifthBox</div>
+      <div class="item" id="item6">Sixth Box</div> -->
+    </div>
+  </body>
+</html>
