@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Before and After Pseudo Selectors</title>
+    <style>
+      body {
+        min-height: 100vh;
+        background: Black;
+        background-position: center;
+        background-size: cover;
+        color: white;
+      }
+      h1 {
+        font-size: 4rem;
+      }
+      header::before{
+        background: url(https://source.unsplash.com/1600x1000/?coding,computer,hacking) no-repeat center center/cover;
+        content: "";
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        z-index: -1;
+        top: 0%;
+        left: 0%;
+        opacity: 0.5;
+      }
+      /* header::after{
+        position: absolute;
+        bottom: 0%;
+        right: 0%;
+      } */
+      .navigation {
+        display: flex;
+        font-family: sans-serif;
+      }
+      li {
+        list-style: none;
+        padding: 30px 20px;
+      }
+      section {
+        display: flex;
+        flex-direction: column;
+        padding: 10px 20px;
+        text-align: center;
+        border-radius: 1em;
+        margin: auto;
+        width: 61em;
+        justify-content: center;
+      }
+      /* section::before{
+          content: "This is Our Content"; 
+      } */
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <ul class="navigation">
+          <li class="item">Home</li>
+          <li class="item">Blog</li>
+          <li class="item">Join</li>
+          <li class="item">Contact</li>
+        </ul>
+      </nav>
+    </header>
+    <section>
+      <h1>Welcome to Codeing World</h1>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat
+        cupiditate ut adipisci, distinctio praesentium autem facere dolorum
+        recusandae porro? Facilis impedit inventore architecto, beatae nisi iste
+        voluptatibus perspiciatis labore fugit quod qui soluta a!
+      </p>
+    </section>
+    <hr>
+  </body>
+</html>
