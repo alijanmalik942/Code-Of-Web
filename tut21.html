@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>More on CSS Selectors</title>
+    <style>
+      h1 {
+        color: #121367;
+        background-color: aqua;
+        font-weight: bold;
+        text-align: center;
+        border-radius: 4px;
+      }
+      /* div > p */
+      /* div + p */
+      div > p  {
+        color: #fff;
+        border-radius: 3px;
+        background-color: #4a4dff;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>This is More on CSS Selectors</h1>
+    <div class="container">
+      <div class="box">
+        <ul class="upp">
+          <li class="low">
+            <p>This is Paragraph</p>
+          </li>
+          <li>This is Another list</li>
+        </ul>
+      </div>
+      <p>This is Another Paragraph</p>
+    </div>
+    <p>This is Outermost Paragraph</p>
+  </body>
+</html>
