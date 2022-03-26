@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Box Shadow and Text Shadow</title>
+    <style>
+      .container {
+        display: flex;
+      }
+      .card {
+        padding: 34px 24px;
+        margin: 24px 14px;
+        /* border: 7px double rgb(0, 47, 255); */
+        border-radius: 12px;
+        background-color: rgb(101, 211, 255);
+        /* box-shadow: X Y blur spread Color; */
+        /* box-shadow: 5px 5px 10px 0px #3258ff; */
+        /* box-shadow: 5px -5px 10px 0px #3258ff; */
+        /* box-shadow: -5px 5px 10px 0px #3258ff; */
+        /* box-shadow: -5px -5px 10px 0px #3258ff; */
+        box-shadow: inset 5px 5px 10px 0px rgba(51, 88, 255, 0.5),
+          5px 5px 10px 0px rgba(0, 0, 0, 0.5);
+      }
+      .card h2 {
+        /* text-shadow: X Y blur Color; */
+        /* text-shadow: 3px -4px 5px #12142740;
+        text-shadow: -3px 4px 5px #12142740;
+        text-shadow: -3px -4px 5px #12142740; */
+        text-shadow: 3px 4px 5px #12142740;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card" id="card-1">
+        <h2>This is HTML Course</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet sequi
+          expedita illo animi quia voluptatibus saepe debitis facere! Voluptatem
+          deserunt eveniet magnam esse eius ab vel. Rem similique necessitatibus
+          reiciendis mollitia modi laudantium cumque!
+        </p>
+      </div>
+      <div class="card" id="card-2">
+        <h2>This is CSS Course</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet sequi
+          expedita illo animi quia voluptatibus saepe debitis facere! Voluptatem
+          deserunt eveniet magnam esse eius ab vel. Rem similique necessitatibus
+          reiciendis mollitia modi laudantium cumque!
+        </p>
+      </div>
+      <div class="card" id="card-3">
+        <h2>This is JS Course</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet sequi
+          expedita illo animi quia voluptatibus saepe debitis facere! Voluptatem
+          deserunt eveniet magnam esse eius ab vel. Rem similique necessitatibus
+          reiciendis mollitia modi laudantium cumque!
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
