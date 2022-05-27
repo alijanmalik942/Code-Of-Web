@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables & Custom Properties</title>
+    <style>
+        /* for using global variable, I will use :root  */
+        :root {
+            --box-color: linear-gradient(45deg, #fc466b 0%, #3f5efb 100%);
+            --maxh: 200px;
+            --maxw: 100px;
+        }
+
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* variable can be declare by -- sign */
+        .box {
+            /* --box-color:#82c5ff; */
+            --shadow: #000000dc;
+            background-image: var(--box-color);
+            box-shadow: 3px 3px 9px var(--shadow);
+            height: 200px;
+            width: 100px;
+            /* background-color: #82c5ff; */
+            border-left: 10px solid navy;
+            margin: 2px 16px;
+            border-radius: 8px;
+        }
+
+        .box1{
+            background: var(--box-color);
+            height: var(--maxh);
+            width: var(--maxw);
+            border-left: 10px solid navy;
+            margin: 2px 16px;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box1"></div>
+    </div>
+
+</html>
